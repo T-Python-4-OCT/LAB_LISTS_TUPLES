@@ -52,7 +52,8 @@ Your mission is to recover the original message using Python list comprehensions
 The transmission consists of several lists of numbers. Each inner list represents one word.
 
 ```
-transmission = [    [18, 0, 19, 8, -2, 17],    [99, 23, 11, 8],    [10, 4, 55, 23, 8]]alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+transmission = [    [18, 0, 19, 8, -2, 17],    [99, 23, 11, 8],    [10, 4, 55, 23, 8]]
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ```
 
 ### Decoding Rules
