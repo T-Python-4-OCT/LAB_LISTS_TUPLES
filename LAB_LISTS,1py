@@ -1,3 +1,7 @@
+""" Movie Ratings Analysis Calculates average movie ratings """
+
+
+
 movies = [
     ("prison_break",2005,[9,3,8]),
     ("Breaking_Bad",2008,[9,10,7]),
@@ -6,12 +10,14 @@ movies = [
     ("Inception", 2010, [9, 8, 9]),
     ("Interstellar", 2014, [10, 9, 9]),
     ]
+        
 for movie in movies:
     title, year, ratings = movie
     average = sum(ratings)/ len(ratings)
     
+    
     if average >=6.0:
-        print(f"{title} ({year}) -Avergae rating:{average:.2f} ★") 
+        print(f"{title} ({year}) -Avergae rating: {average:.2f} ★") 
          
 
 

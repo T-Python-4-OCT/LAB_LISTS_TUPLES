@@ -1,3 +1,6 @@
+''' Decode a Message Cleans and decodes the transmission '''
+
+
 transmission = [
     [9,12,-5,17,7],
     [14,0,8,28,100]
