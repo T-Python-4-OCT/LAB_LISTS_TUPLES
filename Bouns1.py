@@ -4,7 +4,6 @@ numbers1=[]
 
 
 for i in numbers:
-
     if i == 0:
          numbers1.insert(0,i)
     else:
