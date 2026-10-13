@@ -1,8 +1,5 @@
-transmission = [
-    [18, 0, 19, 8, -2, 17],
-    [99, 23, 11, 8],
-    [10, 4, 55, 23, 8]
-]
+transmission = [    [18, 0, 19, 8, -2, 17],    [99, 23, 11, 8],    [10, 4, 55, 23, 8]]
+transmission2 = [    [9, 12, -5, 17, 7],    [14, 0, 8, 28, 100]]
 
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -48,3 +45,4 @@ def run(transmission_list):
 
 
 run(transmission)
+run(transmission2)
