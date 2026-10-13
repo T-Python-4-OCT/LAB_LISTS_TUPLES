@@ -1,27 +1,16 @@
 transmission = [    [9, 12, -5, 17, 7],    [14, 0, 8, 28, 100]]
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-cleaned = []
-decoded_words = []
-corrupted = []
+code = {i + 4: letter for i, letter in enumerate(alphabet)}
 
-for word in transmission:
-    clean_word = []  
-    letters = ""  
-    bad_count = 0  
+cleaned = [[n for n in word if n in code] for word in transmission]
 
-    for n in word:
-        if 4 <= n <= 29:
-            clean_word.append(n)
-            letters += alphabet[n - 4]
-        else:
-            bad_count += 1
-
-    cleaned.append(clean_word)
-    decoded_words.append(letters)
-    corrupted.append(bad_count)
+decoded_words = ["".join([code[n] for n in word]) for word in cleaned]
 
 message = " ".join(decoded_words)
+
+
+corrupted = [len([n for n in word if n not in code]) for word in transmission]
 
 print("Cleaned transmission:")
 print(cleaned)
