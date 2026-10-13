@@ -1,3 +1,9 @@
+transmission = [
+    [18, 0, 19, 8, -2, 17],
+    [99, 23, 11, 8],
+    [10, 4, 55, 23, 8]
+]
+
 def decode_transmission(transmission):
     """Filters out noise and decodes the message."""
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -10,11 +16,6 @@ def decode_transmission(transmission):
     return cleaned, words, message, corrupted
 
 
-transmission = [
-    [18, 0, 19, 8, -2, 17],
-    [99, 23, 11, 8],
-    [10, 4, 55, 23, 8]
-]
 
 cleaned, words, message, corrupted = decode_transmission(transmission)
 
@@ -35,3 +36,4 @@ challenge = [
 _, _, challenge_message, _ = decode_transmission(challenge)
 print("\nChallenge decoded message:")
 print(challenge_message)
+
